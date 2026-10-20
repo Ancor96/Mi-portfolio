@@ -10,11 +10,11 @@
   <header>
     <div>
       <p><strong>Mi Portfolio</strong></p>
-      <nav>
+      <nav aria-label="Navegación principal">
         <ul>
           <li><a href="index.html">Inicio</a></li>
           <li><a href="proyectos.html">Proyectos</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="contacto.html" aria-current="page">Contacto</a></li>
         </ul>
       </nav>
     </div>
@@ -22,38 +22,74 @@
   <main>
     <section>
       <h1>Contacto</h1>
-      <p>¿Tienes una pregunta o quieres hablar sobre algún proyecto? Rellena el siguiente formulario.</p>
+      <p>¿Tienes una pregunta o quieres hablar sobre algún proyecto?
+      Rellena el siguiente formulario.</p>
     </section>
     <section>
       <h2>Envíame un mensaje</h2>
-      <form action="mailto:nombreApellido.26@campuscamara.com" method="post" enctype="text/plain">
-        <div>
-          <label for="nombre"><b>Nombre</b></label>
-          <input type="text" name="nombre" placeholder="Escribe tu nombre" autocomplete="name" required>
+      <form action="mailto:nombreApellido.26@campuscamara.com"
+            method="post"
+            enctype="text/plain">
+        <div class="campo">
+          <label for="nombre"><strong>Nombre</strong></label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Escribe tu nombre"
+            autocomplete="name"
+            required>
         </div>
         <div class="campo">
-          <label for="email"><b>Correo electrónico</b></label>
-          <input type="email" name="email" placeholder="nombreApellido.26@campuscamara.com" autocomplete="email" required>
+          <label for="email"><strong>Correo electrónico</strong></label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="nombre@ejemplo.com"
+            autocomplete="email"
+            required>
         </div>
         <div class="campo">
-          <label for="asunto"><b>Asunto</b></label>
-          <input type="text" name="asunto" placeholder="Motivo del mensaje" required>
+          <label for="asunto"><strong>Asunto</strong></label>
+          <input
+            type="text"
+            id="asunto"
+            name="asunto"
+            placeholder="Motivo del mensaje"
+            required>
         </div>
         <div class="campo">
-          <label for="mensaje"><b>Mensaje</b></label>
-          <textarea name="mensaje" placeholder="Escribe aquí tu mensaje..." required></textarea>
+          <label for="mensaje"><strong>Mensaje</strong></label>
+          <textarea
+            id="mensaje"
+            name="mensaje"
+            placeholder="Escribe aquí tu mensaje..."
+            required></textarea>
         </div>
-        <button class="boton" type="submit">Enviar mensaje</button>
+        <button type="submit">Enviar mensaje</button>
       </form>
-      <p><strong>IMPORTANTE</strong>: este formulario usa el elemento "mailto" para el cual es necesario disponer de un programa gestor de correo externo al navegador o de lo contrario va a dar error al enviarlo.</p>
-      <p><i>Nota</i>: este formulario no usará la información recibida para fines lucrativos y respetará la privacidad del usuario.</p>
+      <p>
+        <strong>IMPORTANTE:</strong>
+        Este formulario utiliza el método mailto, por lo que puede
+        necesitar un programa de correo electrónico configurado
+        en el dispositivo del usuario para enviar el mensaje.
+      </p>
+      <p>
+        <em>Nota:</em>
+        Los datos enviados deben tratarse de forma responsable
+        y utilizarse únicamente para la finalidad indicada.
+      </p>
     </section>
   </main>
   <footer>
     <div>
-      <p><a href="index.html">Inicio</a>
-         <a href="proyectos.html">Proyectos</a>
-         <a href="contacto.html">Contacto</a> Ancor Ramos Pérez 1ºDAM </p>
+      <p>
+        <a href="index.html">Inicio</a> |
+        <a href="proyectos.html">Proyectos</a> |
+        <a href="contacto.html">Contacto</a>
+      </p>
+      <p>&copy; 2026 Ancor Ramos Pérez | 1.º DAM</p>
     </div>
   </footer>
 </body>
