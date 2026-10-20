@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Mi Portfolio</title>
+  <meta name="description" content="Contacta conmigo mediante el formulario de mi portfolio personal.">
+</head>
+<body>
+  <header>
+    <div>
+      <p><strong>Mi Portfolio</strong></p>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section>
+      <h1>Contacto</h1>
+      <p>¿Tienes una pregunta o quieres hablar sobre algún proyecto? Rellena el siguiente formulario.</p>
+    </section>
+    <section>
+      <h2>Envíame un mensaje</h2>
+      <form action="mailto:nombreApellido.26@campuscamara.com" method="post" enctype="text/plain">
+        <div>
+          <label for="nombre"><b>Nombre</b></label>
+          <input type="text" name="nombre" placeholder="Escribe tu nombre" autocomplete="name" required>
+        </div>
+        <div class="campo">
+          <label for="email"><b>Correo electrónico</b></label>
+          <input type="email" name="email" placeholder="nombreApellido.26@campuscamara.com" autocomplete="email" required>
+        </div>
+        <div class="campo">
+          <label for="asunto"><b>Asunto</b></label>
+          <input type="text" name="asunto" placeholder="Motivo del mensaje" required>
+        </div>
+        <div class="campo">
+          <label for="mensaje"><b>Mensaje</b></label>
+          <textarea name="mensaje" placeholder="Escribe aquí tu mensaje..." required></textarea>
+        </div>
+        <button class="boton" type="submit">Enviar mensaje</button>
+      </form>
+      <p><strong>IMPORTANTE</strong>: este formulario usa el elemento "mailto" para el cual es necesario disponer de un programa gestor de correo externo al navegador o de lo contrario va a dar error al enviarlo.</p>
+      <p><i>Nota</i>: este formulario no usará la información recibida para fines lucrativos y respetará la privacidad del usuario.</p>
+    </section>
+  </main>
+  <footer>
+    <div>
+      <p><a href="index.html">Inicio</a>
+         <a href="proyectos.html">Proyectos</a>
+         <a href="contacto.html">Contacto</a> Ancor Ramos Pérez 1ºDAM </p>
+    </div>
+  </footer>
+</body>
+</html>
